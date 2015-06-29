@@ -2,57 +2,92 @@
 
 body
   font-family Gotham
-  // text-align center;
   padding 50px 20px 0;
-  background #f4f4f7;
+  // background #f4f4f7;
+  background white;
   color #444;
   margin 0px
   padding 0px
+  font-size 15px
 
-h1.heading
-  text-align center
-  position relative
-  border 2px solid red
-  text-shadow 4px 4px 4px black
-  font-size 45px
-  position relative
-  line-height 1.2em
-  padding 20px 20px
-  color white
-  
-.header-container
-  border 2px solid red
-  background-color red
-  margin-bottom 3rem
-  
-.main-container
-  border 2px solid red
-.sections-container
-  padding-left 2rem
-  padding-right 2rem
+  .header-container
+    border 2px solid red
+    background-color red
+    margin-bottom 3rem
+    
+  .sections-container
+    padding-left 2rem
+    padding-right 2rem
+    width 0 auto
 
-section.referral-reason
-  h2
-    margin-top 2rem
-    margin-bottom 2rem
-  // border 2px solid red
-  p.a-players
+
+    
+  h1.heading
+    text-align center
+    position relative
+    border 2px solid red
+    text-shadow 4px 4px 4px black
+    font-size 45px
+    position relative
+    line-height 1.2em
+    padding 20px 20px
+    color white
+    
+  .referral-reason-header
+    color blue
+    // width 100%
+    
+
+  section.referral-reason
+    position relative
+    width 50%
+    left 20%
+    h2
+      margin-top 2rem
+      margin-bottom 2rem
+      // width 50%
     // border 2px solid red
+    p.a-players
+      // width 50%
+      border 2px solid red
+      margin-top 2rem
+      margin-bottom 2rem
+      
+
+  ol.easy-referral-list
+    counter-reset:li;
+    // list-style: none;
+
+      
+
+  section.referring-is-easy
+    position relative
+    width 50%
+    left 20%
+    h2, ol
+      margin-top 2rem
+      margin-bottom 2rem
+    p
+      margin-top 2rem
+      margin-bottom 2rem
+    
+
+  section.qualification  
+    width 50%
+    position relative
+    left 20%
+    // background yellow
+    h2
+      margin-top 2rem
+      margin-bottom 2rem
+    ul
+      list-style-type disc
+      margin-left 2rem
+
+  .bonus-structure
     margin-top 2rem
     margin-bottom 2rem
 
-section.qualification  
-  h2
-    margin-top 2rem
-    margin-bottom 2rem
-  ul
-    list-style-type square
-    margin-left 2rem
 
-.bonus-structure
-  margin-top 2rem
-  margin-bottom 2rem
-
-
-  
-  
+    
+    
