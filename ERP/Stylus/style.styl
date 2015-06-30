@@ -20,7 +20,14 @@ body
     padding-right 2rem
     width 0 auto
 
-    
+  .clearfix:after 
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+
   h1.heading
     text-align center
     position relative
@@ -45,27 +52,30 @@ body
   section.referral-reason
     // border 2px solid red
     position relative
-    width 45%
+    // width 45%
     float left
     font-size 20px
     margin-left 2rem
     .referral-reason-header
-      width 100%
+      width 55%
       margin-top 2rem
       margin-bottom 2rem
       font-color black
-      // width 50%
     // border 2px solid red
-    p.a-players
-      // width 50%
-      // border 2px solid red
-      font-family 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif
-      line-height 1
-      margin-top 2rem
-      margin-bottom 2rem
-    .referral-reason-img
+    .referral-reason-cols
+      .col1
+        float left
+        width 45%
+        // border 2px solid red
+        p.a-players
+          font-family 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif
+          line-height 1
+          margin-top 2rem
+          margin-bottom 2rem
+     .col2
       float right
       width 45%
+      // border 2px solid red
       
 
   ol.easy-referral-list
