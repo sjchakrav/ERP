@@ -9,24 +9,18 @@ body
   margin 0px
   padding 0px
   font-size 15px
+  width 100%
 
   .header-container
     border 2px solid red
     background-color red
-    margin-bottom 3rem
+    margin-bottom 2rem
     
   .sections-container
     padding-left 2rem
     padding-right 2rem
     width 0 auto
 
-  .clearfix:after 
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
 
   h1.heading
     text-align center
@@ -56,14 +50,16 @@ body
     float left
     font-size 20px
     margin-left 2rem
+
     .referral-reason-header
       width 55%
       margin-top 2rem
-      margin-bottom 2rem
+      // margin-bottom 2rem
       font-color black
-    // border 2px solid red
+      // border 2px solid red
     .referral-reason-cols
-      .col1
+      // border 2px solid red
+      .leftcol
         float left
         width 45%
         // border 2px solid red
@@ -72,23 +68,20 @@ body
           line-height 1
           margin-top 2rem
           margin-bottom 2rem
-     .col2
-      float right
-      width 45%
-      // border 2px solid red
-      
-
-  ol.easy-referral-list
-    counter-reset:li;
-    // list-style: none;
-
+      .rightcol
+        margin-top 2rem
+        float right
+        width 45%
+        // border 2px solid red
       
 
   section.referring-is-easy
+    display block
     // border 2px solid red
     position relative
     width 35%
     left 20%
+    clear both
     h2, ol
       margin-top 2rem
       margin-bottom 2rem
@@ -112,6 +105,17 @@ body
   .bonus-structure
     margin-top 2rem
     margin-bottom 2rem
+    
+  // Clearfix ----------------------------------------
+
+  .clearfix:before,
+  .clearfix:after 
+    content " "
+    display table
+
+
+  .clearfix:after 
+      clear both
 
 
     
