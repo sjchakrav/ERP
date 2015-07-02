@@ -1,122 +1,64 @@
 @import 'reset.styl'
 
-body
-  font-family Gotham
-  padding 50px 20px 0;
-  // background #f4f4f7;
-  background white;
-  color #444;
-  margin 0px
-  padding 0px
-  font-size 15px
-  width 100%
+space = 1rem
+space-small = space / 2
 
-  .header-container
-    border 2px solid red
-    background-color red
-    margin-bottom 2rem
+tablet = 768px
+desktop = 992px
+desktop-large = 1382px
+
+clearfix()
+  &:after
+    content: ""
+    display: table
+    clear: both
     
-  .sections-container
-    padding-left 2rem
-    padding-right 2rem
-    width 0 auto
+units(cols, grid = 12)
+  (cols/grid) * 100%
 
+.container
+  padding space space 0
+  background whitesmoke
+  
+.row
+  clearfix()
+  margin-left - space-small
+  margin-right - space-small
+  
+.card
+  background red
+  min-height 10rem
+  border 1px solid lightgray
+  border-bottom-width 2px
 
-  h1.heading
-    text-align center
-    position relative
-    border 2px solid red
-    text-shadow 4px 4px 4px black
-    font-size 45px
-    position relative
-    line-height 1.2em
-    padding 20px 20px
-    color white
-    
-  .referral-reason-header
-    color #0000000
-    font-family Gotham SSm A
-    line-height 120%
-    margin 0 0 20px
-    text-transform uppercase
-    font-size 1.2em
-    // width 100%
-    
+.unit
+  box-sizing border-box
+  padding-left space-small
+  padding-right space-small
+  margin-bottom space
+  width 50%
+  float left
 
-  section.referral-reason
-    // border 2px solid red
-    position relative
-    // width 45%
-    float left
-    font-size 20px
-    margin-left 2rem
+  
+  @media only screen and (min-width: tablet)
+    for $i in 1..12
+      &.tablet-{$i}
+        width ($i / 12) * 100%
+  
+  @media only screen and (min-width: desktop)
+    for $i in 1..12
+      &.desktop-{$i}
+        width ($i / 12) * 100%
+    &.small
+      width: units(4)
+    &.medium
+      width: units(8)
 
-    .referral-reason-header
-      width 55%
-      margin-top 2rem
-      // margin-bottom 2rem
-      font-color black
-      // border 2px solid red
-    .referral-reason-cols
-      // border 2px solid red
-      .leftcol
-        float left
-        width 45%
-        // border 2px solid red
-        p.a-players
-          font-family 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif
-          line-height 1
-          margin-top 2rem
-          margin-bottom 2rem
-      .rightcol
-        margin-top 2rem
-        float right
-        width 45%
-        // border 2px solid red
-      
-
-  section.referring-is-easy
-    display block
-    // border 2px solid red
-    position relative
-    width 35%
-    left 20%
-    clear both
-    h2, ol
-      margin-top 2rem
-      margin-bottom 2rem
-    p
-      margin-top 2rem
-      margin-bottom 2rem
-    
-
-  section.qualification  
-    width 50%
-    position relative
-    left 20%
-    // background yellow
-    h2
-      margin-top 2rem
-      margin-bottom 2rem
-    ul
-      list-style-type disc
-      margin-left 2rem
-
-  .bonus-structure
-    margin-top 2rem
-    margin-bottom 2rem
-    
-  // Clearfix ----------------------------------------
-
-  .clearfix:before,
-  .clearfix:after 
-    content " "
-    display table
-
-
-  .clearfix:after 
-      clear both
-
-
-    
-    
+  @media only screen and (min-width: desktop-large)
+    for $i in 1..12
+      &.desktop-large-{$i}
+        width ($i / 12) * 100%
+    &.medium
+      width: units(6)
+    &.large
+      width: units(8)
