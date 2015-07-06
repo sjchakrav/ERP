@@ -29,7 +29,29 @@ units(cols, grid = 12)
   min-height 10rem
   border 1px solid lightgray
   border-bottom-width 2px
-
+// --------------------------  
+.header
+  text-align: center;
+  // background: #7fd0d9;
+  color: black;
+  padding: 30px 0;
+  font-size: 28px;
+  font-family: "Agenda", Helvetica,Arial, sans-serif;
+.referral-guideline-header
+  text-align center
+  
+.list-section
+  width 50%
+  position relative
+  left 30%
+  
+.bonus-table > tbody > tr > td, .bonus-table > thead > tr > th 
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+// --------------------------
 .unit
   box-sizing border-box
   padding-left space-small
@@ -37,10 +59,6 @@ units(cols, grid = 12)
   margin-bottom space
   width 50%
   float left
-.easy-referral-list
-  padding-left 20px
-.qualification-list
-  padding-left 20px
 
   
   @media only screen and (min-width: tablet)
