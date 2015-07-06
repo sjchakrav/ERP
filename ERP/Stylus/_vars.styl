@@ -1,0 +1,66 @@
+////////////////////////
+// Style Guide Colors //
+////////////////////////
+$app-black = black
+$app-white = white
+$off-white = #f1f2f2
+
+$gray-10 = darken($app-white, 10%)
+$gray-20 = darken($app-white, 20%)
+$gray-30 = darken($app-white, 30%)
+$gray-40 = darken($app-white, 40%)
+$gray-50 = darken($app-white, 50%)
+$gray-60 = darken($app-white, 60%)
+$gray-70 = darken($app-white, 70%)
+$gray-80 = darken($app-white, 80%)
+$gray-90 = darken($app-white, 90%)
+
+$primary = #469AD8
+$primary-lightest = lighten(desaturate($primary, 65%), 90%)
+$primary-20 = darken($primary, 20%)
+$primary-40 = darken($primary, 40%)
+$primary-gray = desaturate(lighten($primary, 80%), 55%)
+$primary-gray-15 = darken($primary-gray, 15%)
+$primary-gray-35 = darken($primary-gray, 35%)
+$primary-gray-50 = darken($primary-gray, 50%)
+$primary-gray-60 = darken($primary-gray, 60%)
+$primary-dark = red(darken($primary, 60%), 054)
+
+$success = #68B184
+$error = #E87270
+$caution = #ECAD57
+
+$text-color = $gray-80
+
+soften($color)
+  return desaturate(lighten($color, 70%), 50%)
+
+$space = 2rem
+$space-micro = $space / 4
+$space-small = $space / 2
+$space-medium = $space * 1.75
+$space-large = $space * 2
+$space-x-large = $space * 2.5
+
+$font-face = 'Gotham', 'Gotham SSm A', 'Gotham SSm B', sans-serif
+$app-font-size-xx-small = .6rem
+$app-font-size-x-small = .7rem
+$app-font-size-small = .8rem
+$app-font-size = .9rem
+$app-font-size-medium = 1rem
+$app-font-size-large = 1.2rem
+$app-font-size-x-large = 1.4rem
+
+//Font Weights
+$weight-light = 300
+$weight-normal = 400
+$weight-medium = 500
+$weight-bold = 700
+
+$tablet = 768px
+$desktop = 992px
+$desktop-large = 1382px
+
+
+$base = 16px
+$grid = 12

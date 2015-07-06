@@ -1,0 +1,22 @@
+table
+  width 100%
+  thead
+    background $primary-gray
+
+  &.striped
+    tr:nth-child(even)
+        background $off-white
+  &.bordered
+    tr
+      border-bottom 1px solid $gray-10
+
+  td, th
+    vertical-align middle
+    padding $space-small $space
+    text-align left
+
+  th
+    @extends small-caps
+
+  a
+    color $primary-20
