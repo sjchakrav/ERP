@@ -102,3 +102,51 @@ hgroup
     for $i in 1..$grid
       &.desktop-large-{$i}
         width units($i)
+        
+
+.modal
+  display none
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+  
+
+// POPUP CONFIGURATION AND STYLING-------------------------------------------------------
+.modal-content
+  position absolute
+  top 6rem
+  left 50%
+  width 40%
+  transform translateX(-50%)
+  height 47%
+  padding $space
+  // For background image, store file in an img folder or get img from inside rms
+  // background: url(http://www.executive-i.com/picstore/hh/15_Risk%20Management%20Solutions%20jobs.jpg) no-repeat center
+  background-color white
+  text-align center
+  box-shadow 0 $space-micro $space-micro rgba(black, .3)
+
+  &.p 
+    text-align center
+  //Make pretty and make it animate in/out of view with css
+    
+
+// ANIMATIONS -----------------------------------------------------------------------------
+
+.modal-content
+  animation-name fadeIn
+  animation-duration .5s
+
+@keyframes fadeIn
+  from
+    opacity 0.5
+
+
+
+
+
+
+
+
