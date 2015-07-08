@@ -1,68 +1,47 @@
 html(lang="en")
   head
     link(rel='StyleSheet', href='Stylus/style.css', type='text/css', media='screen')
-    <!-- Latest compiled and minified CSS -->
-    //link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-
-    <!-- Optional theme -->
-    //link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css")
-
-    <!-- JQUERY -->
-    //script(src="https://code.jquery.com/jquery-1.11.3.min.js")
-
-    <!-- Latest compiled and minified JavaScript -->
-    //script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
   body
     header.container.site-header
-      hgroup
-        h1 RMS Employee Referral Program Header - Customize Later
-        h2 Want to work at one of the most influential risk management companies globally? You already do!
-        h3 Do you know someone who is up for the challenge? Tell us about them and the kind of work they do? We'll do the rest.  
-    section.container
+      h1 RMS Employee Referral Program Header - Customize Later
+      h2 Want to work at one of the most influential risk management companies globally? You already do!
+      h3 Do you know someone who is up for the challenge? Tell us about them and the kind of work they do? We'll do the rest.
+    section.container.trio
       .row
         .unit.desktop-4
+          .fa.fa-connectdevelop
           h2 Helpful Jobvite features to find potential referrals within your network.
-          br
-          p 
-          | If there is a fit for the role, the Talent Acquisition team commits to contacting the referred candidate within 5-7 business days from receiving the referral through Jobvite.   
+          p If there is a fit for the role, the Talent Acquisition team commits to contacting the referred candidate within 5-7 business days from receiving the referral through Jobvite.
         .unit.desktop-4
+          .fa.fa-connectdevelop
           h2 Share with Your Social Connections
-          br
           p
-            | Post RMS job opportunities to your LinkedIn, Facebook and Twitter via Jobvite Publisher. The instructions on how to do this can be found <a href="javascript:popup();"  id="publish-to">here.</a>
-            | Or search your LinkedIn connections via Jobvite Social Connections by following the steps included <a href="javascript:popup2();"  id="finding">here.</a>
+            | Post RMS job opportunities to your LinkedIn, Facebook and Twitter via Jobvite Publisher. The instructions on how to do this can be found <a href="javascript:popup();">here.</a>
+            | Or search your LinkedIn connections via Jobvite Social Connections by following the steps included <a href="javascript:popup2();">here.</a>
         .unit.desktop-4
+          .fa.fa-connectdevelop
           h2 Referring someone is easy!
-          br
           p.jobvite
-            | Log in to Jobvite, click on  <a href="javascript:popup3();" id="refer-a-friend"><img class = "refer-a-friend-img" src="http://i.imgur.com/peOwDhE.png" height="24" width="120"></a>. 
-          span.jobvite Follow the instructions to submit the resume of the candidate you are referring. 
+            | Log in to Jobvite, click on  <a href="javascript:popup3();" class="refer-a-friend"><strong>+</strong> Refer-a-friend</a>. Follow the instructions to submit the resume of the candidate you are referring.
     section.container.guidelines
+      h2.referral-guideline-header
+        | Referral Eligibility
       .row
         .unit
-          h2.referral-guideline-header
-            | Referral Eligibility
           .list-section
             ul.qualification-list
-              br
-              li
-                | To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
-              li
-                | Referrals must be external candidates for full-time regular positions who we are not already in contact with. 
-              li
-                | Interns and contract roles are not eligible for referral bonuses.
-              li
-                | You cannot receive a referral bonus if you are in a recruiter within Talent Acquisition, will be part of the interview team or hiring decision to fill the role, in the managerial chain for the role, a contractor with RMS, or a VP level or above within RMS.   
-              li
-                | Referrals can only be accepted within the country in which you work.
-              li
-                | Ex-RMS employees are not eligible to be referred within 6 months of their leaving RMS.
+              li To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
+              li Referrals must be external candidates for full-time regular positions who we are not already in contact with.
+              li Interns and contract roles are not eligible for referral bonuses.
+              li You cannot receive a referral bonus if you are in a recruiter within Talent Acquisition, will be part of the interview team or hiring decision to fill the role, in the managerial chain for the role, a contractor with RMS, or a VP level or above within RMS.
+              li Referrals can only be accepted within the country in which you work.
+              li Ex-RMS employees are not eligible to be referred within 6 months of their leaving RMS.
       //- .easy
-        .row
-          .unit.desktop-8
-            figure
-              img(src="http://www.regencyinsurance.net/img/~www.regencyinsurance.net/iStock_000005177840Small_thumb.jpg", height='250', width='250')        
+        .unit.desktop-8
+          figure
+            img(src="http://www.regencyinsurance.net/img/~www.regencyinsurance.net/iStock_000005177840Small_thumb.jpg", height='250', width='250')
     section.container
       .row
         .unit.desktop-6
@@ -154,11 +133,10 @@ html(lang="en")
               td Entry Level / Admin / Support
               td CHF 1,400
 
-    section.container
+    section.container.fine-print
       .row
-        .unit.desktop-10
+        .unit.desktop-8
           h2 Referral Payout Guidelines
-          br
           p
             |Talent Acquisition will, from time to time, run “specials” for referral bonuses for hard to fill roles.  Bonuses are paid after the new hire completes 90 days of employment with RMS. Both the referring employee and referred employee must be employed at the time of the bonus payout in order to receive the payment. 
             |There is only one referral bonus per candidate. If a candidate is referred by more than one employee, Talent Acquisition will decide who receives the referral bonus based on the date and time stamp of referral submission within Jobvite.

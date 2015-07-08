@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, p
+  margin-bottom $space-small
+h1, h2, h3, h4, h5
+  line-height 1.2
 h1
   font-size  $app-font-size-x-large
   font-weight $weight-light
@@ -7,19 +11,23 @@ h2
 h3
   font-size  $app-font-size-medium
   font-weight $weight-normal
-
 h4
   @extend small-caps
-
 h5
   font-size  $app-font-size
   font-weight $weight-medium
 
+p
+  line-height 1.4
+  vertical-align middle
+
 strong
-  font-weight: $weight-bold
+  font-weight $weight-bold
 
 a
   text-decoration none
+  color $error
+  font-weight $weight-medium
 
 em
   font-style italic
@@ -29,3 +37,10 @@ em
   font-weight $weight-medium
   &:hover
     text-decoration underline
+
+li
+  margin-bottom $space-small
+  line-height 1.4
+
+  &:last-child
+    margin-bottom 0
