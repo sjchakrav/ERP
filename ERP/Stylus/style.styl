@@ -42,6 +42,7 @@ hgroup
   background-position center
   background-size cover
   color white
+  text-align center
 
 .trio
   .fa
@@ -68,6 +69,9 @@ hgroup
 
   p
     font-size $app-font-size-small
+    
+a
+  color #e87270
 
 .header
   text-align: center;
@@ -101,6 +105,7 @@ hgroup
 .payout-guidelines
   // position relative
   margin 0 auto
+
   
 
 
@@ -132,8 +137,45 @@ hgroup
     for $i in 1..$grid
       &.desktop-large-{$i}
         width units($i)
-        
-
+  /* responsive table */
+  // @media only screen and (max-width: 480px)
+  //   for $i in 1..$grid
+  //     &.desktop-large-{$i}
+  //       width units($i)
+  //   table, tbody
+  //     display block
+  //     width 100%
+  //   thead 
+  //     display none
+  //   table tr, table th, table td
+  //     display block
+  //     padding 0
+  //     text-align left
+  //     whitespace normal   
+  //   table tr
+  //     border-bottom black
+  //     padding-bottom 11px
+  //     margin-bottom 11px
+  //   // table th[data-title]:before,
+  //   table td[data-title]:before
+  //     // content attr(data-title) 
+  //     // ":\00A0"
+  //     font-weight bold
+  //   table td
+  //     border-bottom: 1px solid red;
+  //     // border none
+  //     margin-bottom 6px
+  //     color #333
+  //   table td:empty 
+  //     display none
+  //   // table td:first-child
+  //   //   font-size 14px
+  //   //   font-weight bold
+  //   //   margin-bottom 6px
+  //   //   color #333
+  //   // table td:first-child:before 
+  //   //   content: ''
+      
 .modal
   display none
   position absolute

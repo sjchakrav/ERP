@@ -6,20 +6,24 @@ table
 
   &.striped
     tr:nth-child(even)
-        background $off-white
+      background $off-white
   &.bordered
     tr
       border-bottom 1px solid $gray-10
-
+    tr:last-child
+      border-bottom none
   td, th
     vertical-align middle
     padding $space-small $space
     text-align left
-    
+  .taxes
+    white-space nowrap
+    text-overflow hidden
   th
     @extends small-caps
-    &.one-line
-      white-space nowrap
-
+  // .one-line
+  //   white-space nowrap
+    
+// a link poss not being used
   a
     color $primary-20

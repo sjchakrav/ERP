@@ -25,7 +25,7 @@ html(lang="en")
           h2 Search For Your Social Connections
           p.jobvite
             | Search your LinkedIn connections via Jobvite Social Connections by following the steps included <a href="javascript:popup2();">here.</a>
-      p If there is a fit for the role, the Talent Acquisition team commits to contacting the referred candidate within 5-7 business days from receiving the referral through Jobvite.
+      p(style="text-align: center;") If there is a fit for the role, the Talent Acquisition team commits to contacting the referred candidate within 5-7 business days from receiving the referral through Jobvite.
     section.container.guidelines
       h2.referral-guideline-header
         | Referral Eligibility
@@ -49,91 +49,103 @@ html(lang="en")
           table.bordered
             thead
               tr
-                th.one-line Job Grade
+                th Job Grade
                 th India
                 th Bonus(local)
             tbody
               tr
-                td M5 & Above
-                td AGM & Above
-                td ₹ 35,000
+                td(data-title="Job") M5+
+                td(data-title="Position") AGM & Above
+                td(data-title="Bonus") ₹ 35,000
               tr
-                td M3-M5-P5
-                td Manager / Senior Manager / Senior Principal Engineer
-                td ₹ 20,000
+                td(data-title="Job Grade") M3-M5-P5
+                td(data-title="Position") Manager / Senior Manager / Senior Principal Engineer
+                td(data-title="Bonus(Local)") ₹ 20,000
               tr
-                td P2-P4
-                td Engineer / Senior Engineer / Principal Engineer / Senior Analyst / Project Lead / AM or Specialist / Deputy Manager / Modeler / Senior & Lead Modeler / Principal Modeler
-                td ₹ 15,000
+                td(data-title="Job Grade") P2-P4
+                td(data-title="Position") Engineer / Senior Engineer / Principal Engineer / Senior Analyst / Project Lead / AM or Specialist / Deputy Manager / Modeler / Senior & Lead Modeler / Principal Modeler
+                td(data-title="Bonus(Local)") ₹ 15,000
               tr
                 td S1 - S4, P1
                 td Junior Analyst / Assistant Analyst / Analyst / Associate Engineer
                 td ₹ 6,000
+              tr
+                td.taxes *Bonus will be taxed as regular income. They are not grossed up.
+
 
         .unit.desktop-6
           table.bordered
             thead
               tr
-                th.one-line Job Grade
+                th Job Grade
                 th UK
                 th Bonus(local)
             tbody
               tr
-                td P3+
-                td Software Development
-                td £6,400.00
+                td(data-title="Job Grade") P3+
+                td(data-title="Position") Software Development
+                td(data-title="Bonus(Local)")  £6,400.00
               tr
-                td P2+
-                td Experienced levels
-                td £1,600.00
+                td(data-title="Job Grade") P2+
+                td(data-title="Position")  Experienced levels
+                td(data-title="Bonus(Local)")£1,600.00
               tr
-                td P1, S1-S4
-                td Entry Level / Admin / Support
-                td £955.00
+                td(data-title="Job Grade") P1, S1-S4
+                td(data-title="Position") Entry Level / Admin / Support
+                td(data-title="Bonus(Local)") £955.00
+              tr
+                td.taxes *Bonus will be taxed as regular income. They are not grossed up.
+
+
 
       .row
         .unit.desktop-6
           table.bordered
             thead
               tr
-                th.one-line Job Grade
+                th Job Grade
                 th US
                 th Bonus(local)
             tbody
             tr
-              td P3+
-              td Software Development
-              td $10,000
+              td(data-title="Job Grade") P3+
+              td(data-title="Position") Software Development
+              td(data-title="Bonus(Local)") $10,000
             tr
-              td P2+
-              td Experienced levels
-              td $2,500
+              td(data-title="Job Grade") P2+
+              td(data-title="Position") Experienced levels
+              td(data-title="Bonus(Local)") $2,500
             tr
-              td P1, S1-S4
-              td Entry Level / Admin / Support
-              td $1,500
+              td(data-title="Job Grade") P1, S1-S4
+              td(data-title="Position") Entry Level / Admin / Support
+              td(data-title="Bonus(Local)") $1,500
+            tr
+              td.taxes *Bonus will be taxed as regular income. They are not grossed up.
+
+
 
         .unit.desktop-6
           table.bordered
             thead
               tr
-                th.one-line Job Grade
+                th Job Grade
                 th Zurich
                 th Bonus(local)
             tbody
             tr
-              td P3+
-              td Software Development
-              td CHF 9,350
+              td(data-title="Job Grade") P3+
+              td(data-title="Position") Software Development
+              td(data-title="Bonus(Local)") CHF 9,350
             tr
-              td P2+
-              td Experienced levels
-              td CHF 2,350
+              td(data-title="Job Grade") P2+
+              td(data-title="Position") Experienced levels
+              td(data-title="Bonus(Local)") CHF 2,350
             tr
-              td P1, S1-S4
-              td Entry Level / Admin / Support
-              td CHF 1,400
-              //- *Bonus amounts will have taxes removed.
+              td(data-title="Job Grade") P1, S1-S4
+              td(data-title="Position") Entry Level / Admin / Support
+              td(data-title="Bonus(Local)") CHF 1,400
+            tr
+              td.taxes *Bonus will be taxed as regular income. They are not grossed up.
     section.container.fine-print
       .row
         .unit.desktop-8
