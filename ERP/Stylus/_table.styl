@@ -1,5 +1,6 @@
 table
   width 100%
+  table-layout fixed
   thead
     background $primary-gray
 
@@ -14,9 +15,11 @@ table
     vertical-align middle
     padding $space-small $space
     text-align left
-
+    
   th
     @extends small-caps
+    &.one-line
+      white-space nowrap
 
   a
     color $primary-20
