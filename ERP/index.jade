@@ -38,63 +38,53 @@ html(lang="en")
     style.
       .carousel-inner > .item > img,
       .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 100%;
       margin: auto;
       }
-  body
     .container
       .row
         .col-md-12
-        br
-        #myCarousel.carousel.slide(data-ride='carousel')
-          // Indicators
-          ol.carousel-indicators
-            li.active(data-target='#myCarousel', data-slide-to='0')
-            li(data-target='#myCarousel', data-slide-to='1')
-            li(data-target='#myCarousel', data-slide-to='2')
-          // Wrapper for slides
-          .carousel-inner(role='listbox')
-            .item.active
-              img(src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/WX191DV28C.jpg', alt='Chania', width='460', height='345')
-              .carousel-caption
-                p 
-                  //- li To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
-                  //- li Referrals must be external candidates for full-time regular positions who we are not already in contact with.
-            .item
-              img(src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/UM62EOZSRC.jpg', alt='Chania', width='460', height='345')
-              .carousel-caption
-                p 
-                  //- li Interns and contract roles are not eligible for referral bonuses.
-                  //- li You are not eligible for a referral bonus if you are a recruiter or if you play a direct role in the interviewing and/or hiring decision to fill the position; RMS Contractors; or VP levels and above within RMS.
-                
-            .item
-              img(src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0DU466L58G.jpg', alt='Flower', width='460', height='345')
-              .carousel-caption
-                p 
-                  //- li Referrals can only be accepted within the country in which you work.
-                  //- li Former RMS employees are not eligible to be referred within 6 months of their leaving RMS.
-       
-          // Left and right controls
-          a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-            span.sr-only Previous
-          a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-            span.sr-only Next
-             .main-text.hidden-xs
-              .col-md-12.text-center
-                h2.referral-guideline-header(style="align:center;")
-                  | Referral Eligibility
-                p
-                  li To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
-                  li Referrals must be external candidates for full-time regular positions who we are not already in contact with.
-                  li Interns and contract roles are not eligible for referral bonuses.
-                  li You are not eligible for a referral bonus if you are a recruiter or if you play a direct role in the interviewing and/or hiring decision to fill the position; RMS Contractors; or VP levels and above within RMS.
-                  li Referrals can only be accepted within the country in which you work.
-                  li Former RMS employees are not eligible to be referred within 6 months of their leaving RMS.
-        
-                div
-                  a 
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+            .carousel-inner
+              .item.active
+                img(src='http://placehold.it/1200x500/3498db/2980b9', alt='First slide')
+                .carousel-caption
+                  h3
+                    | First slide
+                  p
+                    | Nulla vitae elit libero, a pharetra augue mollis interdum.
+              .item
+                img(src='http://placehold.it/1200x500/9b59b6/8e44ad', alt='Second slide')
+                .carousel-caption
+                  h3
+                    | Second slide
+                  p
+                    | Nulla vitae elit libero, a pharetra augue mollis interdum.
+              .item
+                img(src='http://placehold.it/1200x500/34495e/2c3e50', alt='Third slide')
+                .carousel-caption
+                  h3
+                    | Third slide
+                  p
+                    | Nulla vitae elit libero, a pharetra augue mollis interdum.
+            a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+              span.glyphicon.glyphicon-chevron-left
+            a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+              span.glyphicon.glyphicon-chevron-right
+          .main-text.hidden-xs
+            .col-md-12.text-center
+              h1
+                | Static Headline And Content
+              h3
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              div
+                a.btn.btn-clear.btn-sm.btn-min-block(href='http://www.jquery2dotnet.com/') Login
+                a.btn.btn-clear.btn-sm.btn-min-block(href='http://www.jquery2dotnet.com/') Registration
+    #push
 
 
       //- .row
