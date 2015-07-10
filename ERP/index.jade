@@ -1,5 +1,8 @@
 html(lang="en")
   head
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
     link(rel='StyleSheet', href='Stylus/style.css', type='text/css', media='screen')
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
@@ -26,10 +29,56 @@ html(lang="en")
           p.jobvite
             | Search your LinkedIn connections via Jobvite Social Connections by following the steps included <a href="javascript:popup2();">here.</a>
       p(style="text-align: center;") If there is a fit for the role, the Talent Acquisition team commits to contacting the referred candidate within 5-7 business days from receiving the referral through Jobvite.
-    section.container.guidelines
-      h2.referral-guideline-header
-        | Referral Eligibility
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    style.
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+      }
+    .container
       .row
+        .col-md-12
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+            .carousel-inner
+              .item.active
+                img(src='http://placehold.it/1200x500/3498db/2980b9', alt='First slide')
+                .carousel-caption
+
+              .item
+                img(src='http://placehold.it/1200x500/9b59b6/8e44ad', alt='Second slide')
+                .carousel-caption
+
+              .item
+                img(src='http://placehold.it/1200x500/34495e/2c3e50', alt='Third slide')
+                .carousel-caption
+
+            a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+              span.glyphicon.glyphicon-chevron-left
+            a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+              span.glyphicon.glyphicon-chevron-right
+          .main-text.hidden-xs
+            .col-md-12.text-center
+              h2.referral-guideline-header
+                | Referral Eligibility
+              p
+                li To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
+                li Referrals must be external candidates for full-time regular positions who we are not already in contact with.
+                li Interns and contract roles are not eligible for referral bonuses.
+                li You are not eligible for a referral bonus if you are a recruiter or if you play a direct role in the interviewing and/or hiring decision to fill the position; RMS Contractors; or VP levels and above within RMS.
+                li Referrals can only be accepted within the country in which you work.
+                li Former RMS employees are not eligible to be referred within 6 months of their leaving RMS.
+              div
+                a
+    #push
+
+
+      //- .row
         .unit
           .list-section
             ul.qualification-list
