@@ -1,5 +1,8 @@
 html(lang="en")
   head
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
     link(rel='StyleSheet', href='Stylus/style.css', type='text/css', media='screen')
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
 
@@ -29,7 +32,72 @@ html(lang="en")
     section.container.guidelines
       h2.referral-guideline-header
         | Referral Eligibility
+
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    style.
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+      }
+  body
+    .container
       .row
+        .col-md-12
+        br
+        #myCarousel.carousel.slide(data-ride='carousel')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#myCarousel', data-slide-to='0')
+            li(data-target='#myCarousel', data-slide-to='1')
+            li(data-target='#myCarousel', data-slide-to='2')
+          // Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/WX191DV28C.jpg', alt='Chania', width='460', height='345')
+              .carousel-caption
+                p 
+                  //- li To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
+                  //- li Referrals must be external candidates for full-time regular positions who we are not already in contact with.
+            .item
+              img(src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/UM62EOZSRC.jpg', alt='Chania', width='460', height='345')
+              .carousel-caption
+                p 
+                  //- li Interns and contract roles are not eligible for referral bonuses.
+                  //- li You are not eligible for a referral bonus if you are a recruiter or if you play a direct role in the interviewing and/or hiring decision to fill the position; RMS Contractors; or VP levels and above within RMS.
+                
+            .item
+              img(src='https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0DU466L58G.jpg', alt='Flower', width='460', height='345')
+              .carousel-caption
+                p 
+                  //- li Referrals can only be accepted within the country in which you work.
+                  //- li Former RMS employees are not eligible to be referred within 6 months of their leaving RMS.
+       
+          // Left and right controls
+          a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
+             .main-text.hidden-xs
+              .col-md-12.text-center
+                h2.referral-guideline-header(style="align:center;")
+                  | Referral Eligibility
+                p
+                  li To qualify for a referral bonus, you must submit your referral via Jobvite for a specific role.
+                  li Referrals must be external candidates for full-time regular positions who we are not already in contact with.
+                  li Interns and contract roles are not eligible for referral bonuses.
+                  li You are not eligible for a referral bonus if you are a recruiter or if you play a direct role in the interviewing and/or hiring decision to fill the position; RMS Contractors; or VP levels and above within RMS.
+                  li Referrals can only be accepted within the country in which you work.
+                  li Former RMS employees are not eligible to be referred within 6 months of their leaving RMS.
+        
+                div
+                  a 
+
+
+      //- .row
         .unit
           .list-section
             ul.qualification-list
