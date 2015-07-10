@@ -43,36 +43,40 @@ html(lang="en")
         .unit.desktop-8
           figure
             img(src="http://www.regencyinsurance.net/img/~www.regencyinsurance.net/iStock_000005177840Small_thumb.jpg", height='250', width='250')
-    section.container
+    section.wrapper
       .row
+        //- The unit in this case acts like our container for the cards
         .unit.desktop-6
-          table.bordered
-            thead
-              tr
-                th Job Grade
-                th India
-                th Bonus(local)
-            tbody
-              tr
-                td(data-title="Job") M5+
-                td(data-title="Position") AGM & Above
-                td(data-title="Bonus") ₹ 35,000
-              tr
-                td(data-title="Job Grade") M3-M5-P5
-                td(data-title="Position") Manager / Senior Manager / Senior Principal Engineer
-                td(data-title="Bonus(Local)") ₹ 20,000
-              tr
-                td(data-title="Job Grade") P2-P4
-                td(data-title="Position") Engineer / Senior Engineer / Principal Engineer / Senior Analyst / Project Lead / AM or Specialist / Deputy Manager / Modeler / Senior & Lead Modeler / Principal Modeler
-                td(data-title="Bonus(Local)") ₹ 15,000
-              tr
-                td S1 - S4, P1
-                td Junior Analyst / Assistant Analyst / Analyst / Associate Engineer
-                td ₹ 6,000
-              tr
-                td.taxes *Bonus will be taxed as regular income. They are not grossed up.
-
-
+          .card
+            .front
+              table.bordered
+                thead
+                  tr
+                    th Job Grade
+                    th India
+                    th Bonus(local)
+                tbody
+                  tr
+                    td(data-title="Job") M5+
+                    td(data-title="Position") AGM & Above
+                    td(data-title="Bonus") ₹ 35,000
+                  tr
+                    td(data-title="Job Grade") M3-M5-P5
+                    td(data-title="Position") Manager / Senior Manager / Senior Principal Engineer
+                    td(data-title="Bonus(Local)") ₹ 20,000
+                  tr
+                    td(data-title="Job Grade") P2-P4
+                    td(data-title="Position") Engineer / Senior Engineer / Principal Engineer / Senior Analyst / Project Lead / AM or Specialist / Deputy Manager / Modeler / Senior & Lead Modeler / Principal Modeler
+                    td(data-title="Bonus(Local)") ₹ 15,000
+                  tr
+                    td S1 - S4, P1
+                    td Junior Analyst / Assistant Analyst / Analyst / Associate Engineer
+                    td ₹ 6,000
+                  tr
+                    td.taxes *Bonus will be taxed as regular income. They are not grossed up.
+            //- .back
+            //-   .content
+            //-     h3 I'm the rear
         .unit.desktop-6
           table.bordered
             thead

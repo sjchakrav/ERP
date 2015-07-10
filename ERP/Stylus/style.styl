@@ -87,9 +87,12 @@ a
   text-align center
 
 
-.container
+.container, .wrapper
   padding $space
   font-weight 350
+// Wrapper seems like it containing all the cards
+// .wrapper
+//   background-color blue
  
 
 .list-section
@@ -109,6 +112,23 @@ a
   // position relative
   margin 0 auto
 
+// -----TABLE FLIPS----------------------------
+.card, .content
+  display block
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+// .card
+//   width 100%
+//   height 100%
+//   cursor pointer
+//   position absolute
+//   // background-color red
+  
+
+
   
 
 
@@ -117,8 +137,10 @@ a
   clearfix()
   // margin-left - $space-small
   // margin-right - $space-small
-
 .unit
+  // for flip animation, added relative position
+  position relative
+  //--------------------------------------------- 
   box-sizing border-box
   padding-left $space-small
   padding-right $space-small
