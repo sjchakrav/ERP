@@ -35,11 +35,12 @@ html(lang="en")
       .carousel-inner > .item > img,
       .carousel-inner > .item > a > img {
       width: 100%;
+      height: 70%;
       margin: auto;
       }
     .container
       .row
-        .col-md-12
+        .unit.desktop-12
           #carousel-example-generic.carousel.slide(data-ride='carousel')
             ol.carousel-indicators
               li.active(data-target='#carousel-example-generic', data-slide-to='0')
@@ -92,7 +93,7 @@ html(lang="en")
         .unit.desktop-8
           figure
             img(src="http://www.regencyinsurance.net/img/~www.regencyinsurance.net/iStock_000005177840Small_thumb.jpg", height='250', width='250')
-    section.wrapper
+    section.container
       .row
         //- The unit in this case acts like our container for the cards
         .unit.desktop-6
